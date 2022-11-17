@@ -1,0 +1,113 @@
+.createOfficer-body {
+	width: 100%;		
+	height: 100%;
+	background-color: rgba(22, 22, 22, 0.8);
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 105;
+}
+
+.createOfficer {
+	width: 619px;
+	height: 632px;
+	background-color: rgba(61, 81, 154, 1);
+	border-radius: 30px;
+	padding: 33px 60px 30px 60px;
+	position: relative;
+}
+
+.createOfficer-block {
+	width: 100%;
+	height: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.createOfficer__title {
+	font-size: 30px;
+}
+
+.createOfficer__label {
+	width: 100%;
+	height: 68px;
+	font-size: 20px;
+}
+
+.createOfficer__label span {
+	color: red;
+}
+
+.createOfficer__input {
+	width: 100%;
+	height: 44px;
+	font-size: 20px;
+	padding-left: 10px;
+	caret-color: black;
+	border-radius: 5px;
+}
+
+.createOfficer__approve-label {
+	color: white;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.createOfficer__approve-checkbox {
+	appearance: none;
+	margin-top: 44px;
+	margin-left: 25px;
+}
+
+.createOfficer__approve-checkbox::before {
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: rgba(217, 217, 217, 1);
+	border-radius: 3px;
+	position: absolute;
+	top: 15px;
+	left: 0;
+}
+
+.officerApproved::before {
+	background: rgba(49, 129, 173, 1) url('../../public/img/checked.svg');
+	background-position: 50% 50%;
+	background-size: 10px 10px;
+	background-repeat: no-repeat;
+}
+
+.createOfficer__btn {
+	width: 248px;
+	height: 60px;
+	background-color: rgba(38, 53, 96, 1);
+	font-size: 20px;
+	color: white;
+}
+
+.createOfficer__cross-close {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+@media screen and (max-width: 400px) {
+	.createOfficer {
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+		padding: 33px 15px 30px 15px;
+	}
+
+	.createOfficer-block  {
+		height: 569px;
+	}
+	
+}
