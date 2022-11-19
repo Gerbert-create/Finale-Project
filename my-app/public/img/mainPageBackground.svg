@@ -1,0 +1,17 @@
+<svg className="backgroundSvg" width="1546" height="2995" viewBox="0 0 1519 2995" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<rect className="rect-1" x="1059" y="86.7859" width="487" height="10.8482" fill="#182544"/>
+	<path className="rect-2" d="M3 12.6563H1545V0H3V12.6563Z" fill="#182544"/>
+	<path d="M443 488.876H1155V481.791H443V488.876Z" fill="#182544"/>
+	<path className="rect-4" d="M1151 13.1581H1160V488.876H1151V13.1581Z" fill="#182544"/>
+	<path d="M335 841.11H342V2922.12H335V841.11Z" fill="#182544"/>
+	<path d="M695 848.195H702V1577.97H695V848.195Z" fill="#182544"/>
+	<path d="M573 1451.45H1543V1440.31H573V1451.45Z" fill="#182544"/>
+	<path d="M335 848.195H1096V841.11H335V848.195Z" fill="#182544"/>
+	<path d="M960 2092H1543V2081H960V2092Z" fill="#182544"/>
+	<path d="M960 2230H1543V2219H960V2230Z" fill="#182544"/>
+	<path d="M960 2369H1543V2358H960V2369Z" fill="#182544"/>
+	<path d="M1 2634.17H1543V2621.51H1V2634.17Z" fill="#182544"/>
+	<path d="M466 2995H1543V2983.87H466V2995Z" fill="#182544"/>
+	<path d="M443 481.791H450V841.11H443V481.791Z" fill="#182544"/>
+	<path d="M1089 488.876H1096V848.195H1089V488.876Z" fill="#182544"/>
+</svg>
