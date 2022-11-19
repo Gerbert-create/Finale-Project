@@ -1,0 +1,197 @@
+/* анимация карточек при фокуса и при потере фокуса */
+@keyframes anim-cards-1-focus {
+	from {
+		z-index: 1;
+	}
+
+	to {
+		transform: scale(1.05);
+		z-index: 10;
+	}
+}
+
+@keyframes anim-cards-1-blur {
+	from {
+		transform: scale(1.05);
+		z-index: 10;
+	}
+
+	to {
+		z-index: 1;
+	}
+}
+
+@keyframes anim-cards-2-focus {
+	from {
+		z-index: 2;
+		transform: scale(1);
+	}
+
+	to {
+		transform: scale(1.05);
+		z-index: 10;
+	}
+}
+
+@keyframes anim-cards-2-blur {
+	from {
+		transform: scale(1.05);
+		z-index: 10;
+	}
+
+	to {
+		z-index: 2;
+		transform: scale(1);
+	}
+}
+
+@keyframes anim-cards-3-focus {
+	from {
+		z-index: 3;
+	}
+
+	to {
+		transform: scale(1.05);
+		z-index: 10;
+	}
+}
+
+@keyframes anim-cards-3-blur {
+	from {
+		transform: scale(1.05);
+		z-index: 10;
+	}
+
+	to {
+		z-index: 3;
+	}
+}
+
+@keyframes anim-cards-4-focus {
+	from {
+		z-index: 4;
+	}
+
+	to {
+		transform: scale(1.05);
+		z-index: 10;
+	}
+}
+
+@keyframes anim-cards-4-blur {
+	from {
+		transform: scale(1.05);
+		z-index: 10;
+	}
+
+	to {
+		z-index: 4;
+	}
+}
+
+.section-3__card-1 {
+	animation: anim-cards-1-blur .5s;
+	animation-fill-mode: forwards;
+}
+
+.section-3__card-1:hover {
+	animation: anim-cards-1-focus .5s;
+	animation-fill-mode: forwards;
+	box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+.section-3__card-2 {
+	animation: anim-cards-2-blur .5s;
+	animation-fill-mode: forwards;
+}
+
+.section-3__card-2:hover {
+	animation: anim-cards-2-focus .5s;
+	animation-fill-mode: forwards;
+	box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+.section-3__card-3 {
+	animation: anim-cards-3-blur .5s;
+	animation-fill-mode: forwards;
+}
+
+.section-3__card-3:hover {
+	animation: anim-cards-3-focus .5s;
+	animation-fill-mode: forwards;
+
+}
+
+.section-3__card-4 {
+	animation: anim-cards-4-blur .5s;
+	animation-fill-mode: forwards;
+}
+
+.section-3__card-4:hover {
+	animation: anim-cards-4-focus .5s;
+	animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+
+/* анимация сдвига в право заголовок, информации и конопки главной страницы*/
+@keyframes anim-section-1-title {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+}
+
+@keyframes anim-section-1-Desc {
+	from {
+		transform: translateX(-553px);
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 0;
+	}
+}
+
+@keyframes anim-section-1-btn {
+	from {
+		opacity: 0;
+	}
+
+	50% {
+		transform: scale(1.10);
+	}
+}
+
+.section-1__content-block__title {
+	animation: anim-section-1-title 4s forwards;
+}
+
+.section-1__content-block__description {
+	animation: anim-section-1-Desc 2s forwards;
+}
+
+.section-1__content-block__btn  {
+	animation: anim-section-1-btn 2s;
+}
+
+
+
+/* анимация кнопки для отправки сообщение на главной странице */
+@keyframes anim-section-5-btn-active {
+	from {
+		transform: scale(0.90);
+	}
+}
+
+.section-5__btn:active  {
+	animation: anim-section-5-btn-active 1s;
+}
