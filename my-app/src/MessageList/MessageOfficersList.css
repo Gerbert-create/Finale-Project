@@ -1,0 +1,273 @@
+.message-officers__body-block {
+	width: 1373px;
+	height: auto;
+	background-color: rgba(38, 55, 81, 1);
+	margin: 37px auto 0 auto;
+	padding: 30px 36px 34px 36px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.message-officers__title {
+	color: white;
+	font-size: 30px;
+}
+
+.message-officers__mainBlock {
+	margin-top: 30px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	padding: 28px 30px 21px 30px;
+}
+
+.message-officers__filter-flex {
+	width: 100%;
+	height: 39px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.message-officers__search-label {
+	width: 100%;
+	height: 39px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.message-officers__search-input {
+	width: 1000px;
+	height: 100%;
+	caret-color: black;
+	font-size: 20px;
+	margin-left: 27px;
+	border: 2px solid rgb(170, 170, 170);
+	padding-left: 10px;
+}
+
+.message-officers__search-select {
+	width: 150px;
+	height: 100%;
+	border: 2px solid rgb(170, 170, 170);
+	padding-left: 10px;
+}
+
+.message-officers__list-block {
+	margin-top: 18px;
+	width: 100%;
+	min-height: 300px;
+	max-height: 900px;
+	overflow-y: auto;
+	box-shadow: inset 0px -5px 20px -10px black;
+}
+
+.message-officers {
+	width: 100%;
+	height: 75px;
+	border: 2px solid black;
+	border-bottom: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 44px;
+}
+
+.message-officers:last-child {
+	border-bottom: 2px solid black;
+}
+
+.message-officers__mainInfo {
+	width: 634px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+
+.messageList__license {
+	color: rgb(12, 75, 148);
+}
+
+.messageList__license:hover,
+.officersList__officerName:hover {
+	text-decoration: underline;
+	color: rgb(166, 177, 199);
+}
+
+.message-officers__btn-delete {
+	width: 126px;
+	height: 30px;
+	background-color: rgba(239, 87, 87, 1);
+	color: white;
+	font-size: 20px;
+}
+
+.message-officers__btn-delete:hover {
+	background-color: rgb(165, 101, 101);
+}
+
+.message-officers__cross {
+	display: inline-block;
+	position: absolute;
+	top: 34px;
+	right: 36px;
+}
+
+.officersList__btn-addOfficer {
+	width: 200px;
+	height: 55px;
+	align-self: flex-start;
+	background-color: rgba(61, 87, 180, 1);
+	color: white;
+	border-radius: 5px;
+	font-size: 20px;
+
+}
+
+.new {
+	color: rgb(139, 139, 139);
+}
+
+.in_progress {
+	color: rgb(175, 116, 6);
+}
+
+.done {
+	color: rgb(19, 158, 1);
+}
+
+.message-officers__mobileBtn-delete {
+	display: none;
+}
+
+@media screen and (max-width: 1373px) {
+	.message-officers__body-block,.message-officers__mainBlock {
+		width: 100%;
+	}
+
+	.message-officers__body-block {
+		min-height: 100vh;
+		max-height: auto;
+		margin-top: 0;
+	}
+
+	.message-officers__filter-flex {
+		width: 100%;
+		height: 100px;
+		flex-direction: column;
+	}
+
+	.message-officers__search-input {
+		width: 100%;
+		height: 40px;
+	}
+
+	.message-officers__search-select {
+		height: 40px;
+		align-self: flex-end;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+
+	.message-officers__body-block {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		display: block;
+	}
+
+	.message-officers__title {
+		display: none;
+	}
+
+	.message-officers__mainBlock {
+		margin: 0;
+		width: 100%;
+		padding: 0;
+		padding-top: 100px;
+		padding-left: 15px;
+		padding-right: 15px;
+		min-height: 100vh;
+		max-height: auto;
+	}
+
+	.message-officers__list-block {
+		padding-bottom: 10px;
+	}
+
+	.officersList__btn-addOfficer {
+		position: absolute;
+		top: 15px;
+		left: 15px;
+	}
+}
+
+@media screen and (max-width: 1111px) {
+	.message-officers__mainInfo {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.message-officers {
+		padding: 10px 20px;
+		min-height: 90px;
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width: 426px) {
+
+	.message-officers__list-block {
+		width: 100%;
+		height: 600px;
+	}
+
+	.message-officers__mainInfo {
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		font-size: 15px;
+		height: 70px;
+	}
+
+	.messageSender-officers__name {
+		font-size: 20px;
+		width: 100%;
+		word-break: break-all;
+	}
+
+	.message-officers {
+		padding: 14px;
+		height: auto;
+		position: relative;
+	}
+
+	.message-officers__mobileBtn-delete {
+		width: 14px;
+		height: 18px;
+		display: block;
+		position: absolute;
+		bottom: 14px;
+		right: 14px;
+	}
+
+	.message-officers__btn-delete {
+		display: none;
+	}
+
+	.message-officers__cross {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+
+
+
+}
